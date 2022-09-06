@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is where your description goes">
+    <meta name="keywords" content="one, two, three">
+
+    <title>SPACE API</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 id="nasaData">Space Data</h1>
+    <h2 id="cameras">Onboard rover cameras</h2>
+    <h3 id="clickHereText">Click the &#128247 icon to see the images!</h3>
+
+    <table id="tableStyle">
+        <tr>
+            <th class="thTable">Abbreviation</th>
+            <th class="thTable">Camera</th>
+            <th class="thTable">Curiosity</th>
+            <th class="thTable">Opportunity</th>
+            <th class="thTable">Spirit</th>
+        </tr>
+        <tr>
+            <th>FHAZ</th>
+            <th>Front Hazard Avoidance Camera</th>
+            <th>
+                <button onclick="imageAppear()" id="curfhaz" class="curiosityClass" href="">&#128247</button><br>
+            </th>
+            <th>
+                <button onclick="imageAppear()" class="opportunityClass" href="">&#128247</button><br>
+            </th>
+            <th>
+                <button onclick="imageAppear()" class="spiritClass" href="">&#128247</button><br>
+            </th>
+        </tr>
+        <tr>
+            <th>RHAZ</th>
+            <th>Rear Hazard Avoidance Camera</th>
+            <th>
+                <button onclick="imageAppear()" class="curiosityClass" href="">&#128247</button><br>
+            </th>
+            <th>
+                <button onclick="imageAppear()" class="opportunityClass" href="">&#128247</button><br>
+            </th>
+            <th>
+                <button onclick="imageAppear()" class="spiritClass" href="">&#128247</button><br>
+            </th>
+        </tr>
+        <tr>
+            <th>MAST</th>
+            <th>Mast Camera</th>
+            <th>
+                <button onclick="imageAppear()" class="curiosityClass" href="">&#128247</button><br>
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>CHEMCAM</th>
+            <th>Chemistry and Camera Complex</th>
+            <th>
+                <button onclick="imageAppear()" class="curiosityClass" href="">&#128247</button><br>
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>MAHLI</th>
+            <th>Mars Hand Lens Imager</th>
+            <th>
+                <button onclick="imageAppear()" class="curiosityClass" href="">&#128247</button><br>
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>MARDI</th>
+            <th>Mars Descent</th>
+            <th>
+                <button onclick="imageAppear()" class="curiosityClass" href="">&#128247</button><br>
+            </th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>NAVCAM</th>
+            <th>Navigation Camera</th>
+            <th>
+                <button onclick="imageAppear()" class="curiosityClass" href="">&#128247</button><br>
+            </th>
+            <th>
+                <button onclick="imageAppear()" class="opportunityClass" href="">&#128247</button><br>
+            </th>
+            <th>
+                <button onclick="imageAppear()" class="spiritClass" href="">&#128247</button><br>
+            </th>
+        </tr>
+        <tr>
+            <th>PANCAM</th>
+            <th>Panoramic Camera</th>
+            <th></th>
+            <th>
+                <button onclick="imageAppear()" class="opportunityClass" href="">&#128247</button><br>
+            </th>
+            <th>
+                <button onclick="imageAppear()" class="spiritClass" href="">&#128247</button><br>
+            </th>
+        </tr>
+        <tr>
+            <th>MINITES</th>
+            <th>Miniature Thermal Emission Spectrometer (Mini-TES)</th>
+            <th></th>
+            <th>
+                <button onclick="imageAppear()" class="opportunityClass" href="">&#128247</button><br>
+            </th>
+            <th>
+                <button onclick="imageAppear()" class="spiritClass" href="">&#128247</button><br>
+            </th>
+        </tr>
+    </table>
+
+    <div>
+        <div id="getImage">
+            <input id="roverInput" type="date" name="" value="">
+            <button id="roverImageButton" type="button" name="button">Get Image</button>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <h2>
+            <!--   <script src="js/table_function.js"></script>    -->
+            Image here:<img id="roverImageLocation" src="" alt="NASA post image">
+        </h2>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/server.js"></script>
+    <script src="js/table_function.js"></script>
+</body>
+
+</html>
